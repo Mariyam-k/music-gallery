@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="en" dir="ltr"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+<body style="background-image: linear-gradient(rgb(20, 18, 18),rgb(57, 43, 43));;">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg" style="width: 280px; height: 100vh; position: fixed; top: 0; left: 0; background-color: rgb(20, 18, 18);">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+          </svg> <use xlink:href=""></use>
+          <span class="fs-4 m-1 p-3">Spotify</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto "  >
+          <li class="nav-item">
+            <a href="/page1.html" class="nav-link " aria-current="page">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="/home"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+              </svg>
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="/artist.html" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              ARTIST
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+           
+               YOUR LIB
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+               Our Product
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+<div class="main-content" >
+      <section class="hero my-4 mx-4">
+        <h1 class="fw-bold text-light">Welcome to Spotify </h1>
+        <p class="text-secondary">Enjoy unlimited music streaming</p>
+        <button class="btn btn-success">Get Started</button>
+    </section>
+    <div class="container overflow-hidden">
+    <div id="samp1">  
+      <div class="row gx-5 my-3">
+        <div class="col">
+          <img src="/image/popmix.jpg" class=" float-start" alt="..." width="60px" height="60px">
+         <div class="p-3 border bg-light">  Pop Mix</div>
+        </div>
+        <div class="col">
+          <img src="/image/1d.jpg" class=" float-start" alt="..." width="60px" height="60px">
+
+          <div class="p-3 border bg-light">  This Is One Direction</div>
+        </div>
+        <div class="col">
+          <img src="/image/Athlethic.jpg" class=" float-start" alt="..." width="60px" height="60px">
+          <div class="p-3 border bg-light">  The Athlethic Football Tactics</div>
+         </div>
+       </div>
+      </div>
+      <div id="samp2">
+        <div class="row gx-5">
+          <div class="col">
+            <img src="/image/alloften.jpg" class=" float-start" alt="..." width="60px" height="60px">
+
+           <div class="p-3 border bg-light">All Of 10s</div>
+          </div>
+          <div class="col">
+            <img src="/image/bts.jpg" class=" float-start" alt="..." width="60px" height="60px">
+
+            <div class="p-3 border bg-light">BTS </div>
+          </div>
+          <div class="col">
+            <img src="/image/billie.jpg" class=" float-start" alt="..." width="60px" height="60px">
+
+            <div class="p-3 border bg-light">Billie Eilles</dconsole.log("Page Loaded Successfully");
+console.log("User is currently on the Home Page");
+console.log("User is currently viewing the Music Gallery");iv>
+           </div>
+        </div>
+      </div>  
+    </div>
+  <div class="row my-4 mx-4">   
+  <div class="col-4" >                                                             
+    <div class="box-item">
+      <div class="box-item__image">
+        <img src="https://i.scdn.co/image/ab67706f000000026f97bf69c50aa28543abc9f1" width="250px" height="300px">
+      </div>
+      <h4>Today's Top Hits</h4>
+      <p>Jack Harlow is on the Hottest 50!</p>
+    </div> 
+   </div>
+   <div class="col-4">
+    <div class="box-item">
+      <div class="box-item__image">
+        <img src="https://i.scdn.co/image/ab67706f000000026aef7fab3f837088a74271b9" width="250px" height="300px">
+      </div>
+      <h4>Mega Hit Mix</h4>
+      <p>A mega mix of 75 of your favorite songs</p>
+    </div>
+   </div>
+   <div class="col-4">
+    <div class="box-item">
+      <div class="box-item__image">
+        <img src="https://i.scdn.co/image/ab67706f000000025af1070c80cd50dbbb4cfa19" width="250px" height="300px">
+      </div>
+      <h4>Happy Hits!</h4>
+      <p>Jots tp boost your mood and happiness!</p>
+    </div>
+   </div>
+  </div>     
+   <div class="head1">                                                
+    <div class="row my-3 mx-3 ">
+     <div class="col">
+      <h2 class="head1">LATEST RELEASES</h2>
+     </div>
+    </div>
+  </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-sm-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="300px" src="/image/bilii.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>billie eilish songs</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Billie Eilish</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider cardal ct longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <button type="button" class="btn btn-sm btn-outline-light">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="300px" src="/image/NF_-_The_Search.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>The Search</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">JHOL</text></img>
+            <div class="card-body">
+              <p class="card-text">"Born Again" is a song by Thai r.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 
+                  <button type="button" class="btn btn-sm btn-outline-light">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="300px" src="/image/LOVE-HANGOVER.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Love Hangover</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with ntent is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+        <div class="head1">
+          <div class="row my-3 mx-3 ">
+            <div class="col">
+              <h2 class="head1">TOP TRENDING</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="300px" src="/image/atp.jpg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><title>APT </title><text x="50%" y="50%" fill="#eceeef" dy=".3em">APT</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supportintent is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="300px" src="/image/ahista-ahista-.jpg" focusable="false"><title>Ahista Ahista</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">Ahista Ahista</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="300px" src="/image/let-the-world-burn.jpg " aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Let The World Burn</title><text x="50%" y="50%" fill="#eceeef" dy=".3em">let The World Burn</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting texis content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head1">
+        <div class="row my-3 mx-3 ">
+          <div class="col">
+            <h2 class="head1">RECOMMENDATION</h2>
+          </div>
+        </div>
+      </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-3">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/image/honey.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>MILLIONAIRE</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">MILLIONAIRE</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/image/red-tape.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>THE PURGA</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Ahista Ahista</text></img>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                  </svg></button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/image/hope.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">APT</text></IMG>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural l.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Play</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" id="foot">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+</svg>
+            </a>
+            <p class="text-body-light">© 2024</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3 foot-item">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">Home</a></li>
+              <li class="nav-item mb-2">Features</a></li>
+              <li class="nav-item mb-2">Pricing</a></li>
+              <li class="nav-item mb-2">FAQs</a></li>
+              <li class="nav-item mb-2">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-2 foot-item">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3 foot-item">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">About</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>   
+</div> 
+
+     
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="java.js"></script>
+</body>
+</html>
