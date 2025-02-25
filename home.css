@@ -1,0 +1,136 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000; /* Bootstrap dark background equivalent */
+    padding: 1rem;
+  }
+  .main-content {
+    margin-left: 280px;  /* Same as the sidebar's width */
+    padding: 1rem;
+  }
+  .carousel-item {
+    position: relative;
+  }
+  .box-item{
+    color: aliceblue;
+    background-color: #221d1d;
+  }
+  .symbol_colour{
+    color: rgb(75, 165, 72);
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    top: 10px; /* Adjust as needed for top-left positioning */
+    left: 10px;
+    font-size: 4em;
+     z-index: 2;
+
+    width: 100%;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    padding: 20px;
+    animation: slideUp 1s ease-out forwards;
+  }
+ /* Make sure the container and carousel item are relatively positioned */
+.main-content{
+  position: relative;
+
+}
+
+/* Styling and animation for the overlay text */
+.overlay-text {
+  position: absolute;
+  top: 0;      /* Final position: top-left */
+  left: 0;
+  font-size: 4em;  /* Big font size */
+  color: #fff;
+  padding: 20px;
+  opacity: 0;       /* Start hidden */
+  transform: translateX(50%); /* Start off-screen at the bottom */
+  animation: slideFromBottom 2s ease-out forwards;
+}
+video{
+width:100vw;
+height: 100%;
+object-fit: cover;
+}
+.head1{
+  text-align: center;
+  background-color: #110808;
+  color: aliceblue;
+  border-radius: 1px;
+  font-family: "Lato", serif;
+  font-weight: 400;
+   font-style: normal;
+}
+.card{
+
+  font-family: "Lato", serif;
+  font-weight: 400;
+   font-style: normal;
+  background-color: #221d1d;
+  color: #fff;
+}
+#samp1{
+  font-family: "Lato", serif;
+  font-weight: 400;
+   font-style: normal;
+  background-color: #221d1d;
+}
+#samp2{
+  font-family: "Lato", serif;
+  font-weight: 400;
+   font-style: normal;
+}
+#foot{
+  color: #fff;
+  background-color: #2e2424;
+
+}
+title{
+  text-align: center;
+
+}
+.card{
+  width: 250px;
+  height: 450px;
+  background-color: #221d1d;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+  
+}
+.card:hover{
+  transform:scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+#navbar1{
+  background-color: #2e2424;
+  color: #fff;
+
+}
+.footer{
+  width: 100%;
+  color: #2e2424;
+}
+.foot-text{
+  color: #fff;
+
+}
+.footer_text{
+ color: white;
+}
+#foot-text{
+  color: #fff;
+}
