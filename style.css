@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000000;
+    color: white;
+  }
+  
+  .sidebar {
+      width: 280px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000000; /* Bootstrap dark background equivalent */
+      padding: 1rem;
+    }
+    .main-content {
+      margin-left: 280px;  /* Same as the sidebar's width */
+      padding: 1rem;
+    }
+    .controls button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      margin: 10px;
+      transition: transform 0.2s;
+  }
+  .controls button:hover {
+      transform: scale(1.2);
+  }
+  #seek-bar {
+      width: 100%;
+      height: 6px;
+      border-radius: 5px;
+      appearance: none;
+      background: #a80f0f;
+      cursor: pointer;
+      outline: none;
+  }
+  #seek-bar::-webkit-slider-thumb {
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      background: #ffffff;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  .extra-controls button {
+      font-size: 20px;
+      background: none;
+      border: none;
+      color: white;
+      margin: 5px;
+      cursor: pointer;
+      transition: color 0.2s;
+  }
+  .extra-controls button:hover {
+      color: #1db954;
+  }
+    
+  .music-player {
+      background: #0e0f0e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 550px;
+      height: 590px; 
+  }
+  .album-art {
+      width: 100%;
+      border-radius: 10px;
+  }
+  .controls button {
+      background: none;
+      border: none;
+      color: rgb(53, 168, 82);
+      font-size: 24px;
+      cursor: pointer;
+      margin: 10px;
+  }
+  #seek-bar {
+      width: 100%;
+  }
+  .row-1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.album-art{
+  width: max-content;
+  overflow: hidden;
+  height: auto;
+}  
+ 
+  .music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    padding: 10px;
+    background-color: #1c281f; /* Dark background for the player */
+}
+
+.player-card {
+    display: flex;
+    background-color: #121212;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.album-art-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-art {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.controls-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.song-info {
+    margin-bottom: 20px;
+}
+
+.song-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.artist, .album {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#play-pause {
+    font-size: 2rem;
+}
+
+#seek-bar {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.extra-controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.extra-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+    
+     
