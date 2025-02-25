@@ -1,0 +1,44 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000; /* Bootstrap dark background equivalent */
+    padding: 1rem;
+  }
+  .main-content {
+    margin-left: 280px;  /* Same as the sidebar's width */
+    padding: 1rem;
+  }
+  .naveb{
+    background-color:gray;
+    color: aliceblue;
+  }
+  .title{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(42, 36, 36);
+  }
+  .title1{
+    text-align: center;  
+  }
+  .button-view{
+    text-align: center;
+
+  }
+  .footer{
+    width: 100%;
+    color: #2e2424;
+  }
+  .foot-text{
+    color: #fff;
+  
+  }
+  .footer_text{
+   color: white;
+  }
+  #foot-text{
+    color: #fff;
+  }
